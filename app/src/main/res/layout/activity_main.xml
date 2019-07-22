@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/colorBluy"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="115dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher2"
+            android:background="@color/colorBlue"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="9dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Iqbal Mubarok"
+            android:layout_marginTop="7dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="83dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="375dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:background="@color/colorGreen">
+
+        <EditText
+            android:id="@+id/textNama"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="    Nama"
+            android:textColor="@color/colorGreey"/>
+
+        <EditText
+            android:id="@+id/textPswd"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textNama"
+            android:layout_marginLeft="15dp"
+            android:text="    Password"
+            android:textColor="@color/colorGreey" />
+
+        <EditText
+            android:id="@+id/textPswd2"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPswd"
+            android:layout_marginLeft="15dp"
+            android:text="    Ulang Password"
+            android:textColor="@color/colorGreey"/>
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPswd2"
+            android:layout_centerInParent="true"
+            android:text="Daftar"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
